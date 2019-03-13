@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "eduCage",
+  "version": "1.0",
+  "description": "Troque todas as imagens do site por fotos do Edu.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["jquery.js", "educage.js"]
+    }
+  ]
+}
